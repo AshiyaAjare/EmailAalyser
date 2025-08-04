@@ -93,5 +93,3 @@ python main.py
 - Only emails with the subject "Training Request" are processed.
 - Only the latest unprocessed email is handled per run.
 
-## License
-MIT (or specify your license) 
