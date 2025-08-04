@@ -15,7 +15,7 @@ def submit_google_form(data):
         hour = hour.strip()
         minute = minute.strip()
     except Exception as e:
-        print("❌ Failed to parse date/time:", e)
+        print("Failed to parse date/time:", e)
         return
 
     payload = {
@@ -31,6 +31,6 @@ def submit_google_form(data):
     }
 
     response = requests.post(url, data=payload)
-    print("📤 Submitting payload:", payload)
-    print("🔁 Status:", response.status_code)
-    print("🧾 Response text:", response.text)
+    print("Submitting payload:", payload)
+    print("Status:", response.status_code)
+    print("Response text:", response.text)
